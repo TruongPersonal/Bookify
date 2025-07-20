@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["maven", "openjdk18"]
+
+[phases.build]
+cmds = ["cd backend && mvn clean package -DskipTests"]
+
+[start]
+cmd = "java -jar backend/target/bookify-0.0.1-SNAPSHOT.jar"
