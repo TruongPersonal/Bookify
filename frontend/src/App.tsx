@@ -23,8 +23,8 @@ const Auth0ProviderWithHistory = ({ children }: { children: React.ReactNode }) =
 
   return (
       <Auth0Provider
-          domain={auth0Config.issuer}
-          clientId={auth0Config.clientId}
+          domain={auth0Config.issuer ?? ""}
+          clientId={auth0Config.clientId ?? ""}
           authorizationParams={{
             redirect_uri: auth0Config.redirectUri,
             audience: auth0Config.audience,
