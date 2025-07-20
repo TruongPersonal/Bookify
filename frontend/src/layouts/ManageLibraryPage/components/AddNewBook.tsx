@@ -126,7 +126,7 @@ export const AddNewBook = () => {
                             <input type='number' className='form-control' name='Copies' required 
                                 onChange={e => setCopies(Number(e.target.value))} value={copies}/>
                         </div>
-                        <input type='file' className='w-100' onChange={e => base64ConversionForImages(e)}/>
+                        <input type='file' className='form-control' onChange={e => base64ConversionForImages(e)}/>
                         <div>
                             <button type='button' className='btn btn-primary mt-3' onClick={submitNewBook}>
                                 Add Book
