@@ -30,7 +30,7 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
         disableHttpMethods(Message.class, config, theUnsupportedActions);
 
         /* Configure CORS Mapping */
-        String theAllowedOrigins = "https://bookify-truongpersonal.vercel.app";
+        String theAllowedOrigins = "https://bookify.truongpersonal.vercel.app";
         cors.addMapping(config.getBasePath() + "/**")
                 .allowedOrigins(theAllowedOrigins);
     }

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin("https://bookify-truongpersonal.vercel.app")
+@CrossOrigin("https://bookify.truongpersonal.vercel.app")
 @RestController
 @RequestMapping("/api/messages")
 public class MessagesController {
