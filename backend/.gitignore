@@ -12,8 +12,6 @@ pom.xml.versionsBackup
 pom.xml.next
 release.properties
 
-application.properties
-
 # IDE
 .idea/
 *.iml
