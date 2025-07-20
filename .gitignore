@@ -1,0 +1,17 @@
+# Ignore IDE settings
+.idea/
+.vscode/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore environment secrets
+.env
+.env.*
+
+# Ignore MacOS folder
+__MACOSX/
