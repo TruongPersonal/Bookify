@@ -1,6 +1,3 @@
 node_modules/
 build/
-.env
-ssl-localhost/
-localhost.conf
 .DS_Store
