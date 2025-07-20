@@ -1,7 +1,7 @@
 export const auth0Config = {
-    clientId: '7Bw6rT4eLWREAxIbRWCsrNS1vkN48dZU',
-    issuer: 'truongpersonal.us.auth0.com',
-    audience: 'https://localhost:8443',
-    redirectUri: window.location.origin+"/callback",
-    scope: 'openid profile email'
+  clientId: process.env.REACT_APP_AUTH0_CLIENT_ID,
+  issuer: process.env.REACT_APP_AUTH0_ISSUER,
+  audience: process.env.REACT_APP_AUTH0_AUDIENCE,
+  redirectUri: window.location.origin + "/callback",
+  scope: "openid profile email"
 }
