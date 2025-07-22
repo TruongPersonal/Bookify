@@ -1,6 +1,5 @@
 {
-  "short_name": "Bookify",
-  "name": "Bookify - Book Library App",
+  "name": "Bookify",
   "icons": [
     {
       "src": "favicon.ico",
