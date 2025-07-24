@@ -49,7 +49,7 @@ public class BookService {
             throw new Exception("Book doesn't exist or already checked out by user");
         }
 
-        List<Checkout> currentBooksCheckedOut = checkoutRepository.findBooksByUserEmail(userEmail);
+        List<Checkout> currentBooksCheckedOut = checkoutRepository.findByUserEmail(userEmail);
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
@@ -103,14 +103,14 @@ public class BookService {
     }
 
     public int currentLoansCount(String userEmail) {
-        return checkoutRepository.findBooksByUserEmail(userEmail).size();
+        return checkoutRepository.findByUserEmail(userEmail).size();
     }
 
     public List<ShelfCurrentLoansResponse> currentLoans(String userEmail) throws Exception {
 
         List<ShelfCurrentLoansResponse> shelfCurrentLoansResponses = new ArrayList<>();
 
-        List<Checkout> checkoutList = checkoutRepository.findBooksByUserEmail(userEmail);
+        List<Checkout> checkoutList = checkoutRepository.findByUserEmail(userEmail);
         List<Long> bookIdList = new ArrayList<>();
 
         for (Checkout i: checkoutList) {
