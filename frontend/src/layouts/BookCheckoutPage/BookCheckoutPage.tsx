@@ -202,13 +202,16 @@ export const BookCheckoutPage = () => {
         )
     }
 
-    if (httpError) {
-        return (
-            <div className='container m-5'>
-                <p>{httpError}</p>
-            </div>
-        )
-    }
+  if (httpError) {
+    return (
+      <div className="container mt-5 mb-5">
+        <div className="p-3 text-danger">
+          <strong>Error:</strong>
+          <span className="fw-light"> {httpError}</span>
+        </div>
+      </div>
+    );
+  }
 
     async function checkoutBook() {
         const accessToken = await getAccessTokenSilently();
