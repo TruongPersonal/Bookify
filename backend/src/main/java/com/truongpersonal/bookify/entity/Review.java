@@ -6,29 +6,29 @@ import jakarta.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "Review")
+@Table(name = "review")
 @Data
 public class Review {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "Id")
+    @Column(name = "id")
     private Long id;
 
-    @Column(name = "UserEmail")
+    @Column(name = "userEmail")
     private String userEmail;
 
-    @Column(name = "Date")
+    @Column(name = "date")
     @CreationTimestamp
     private Date date;
 
-    @Column(name = "Rating")
+    @Column(name = "rating")
     private double rating;
 
-    @Column(name = "BookId")
+    @Column(name = "bookId")
     private Long bookId;
 
-    @Column(name = "ReviewDescription")
+    @Column(name = "reviewDescription")
     private String reviewDescription;
 
 

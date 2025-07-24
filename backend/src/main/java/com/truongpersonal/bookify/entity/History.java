@@ -5,7 +5,7 @@ import lombok.Data;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "History")
+@Table(name = "history")
 @Data
 public class History {
 
@@ -27,25 +27,25 @@ public class History {
     @Column(name = "id")
     private Long id;
 
-    @Column(name="UserEmail")
+    @Column(name="user_email")
     private String userEmail;
 
-    @Column(name="CheckoutDate")
+    @Column(name="checkout_date")
     private String checkoutDate;
 
-    @Column(name="ReturnedDate")
+    @Column(name="returned_date")
     private String returnedDate;
 
-    @Column(name="Title")
+    @Column(name="title")
     private String title;
 
-    @Column(name="Author")
+    @Column(name="author")
     private String author;
 
-    @Column(name="Description")
+    @Column(name="description")
     private String description;
 
-    @Column(name="Img")
+    @Column(name="img")
     private String img;
 }
 

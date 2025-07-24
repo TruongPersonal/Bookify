@@ -4,33 +4,33 @@ import lombok.Data;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "Book")
+@Table(name = "book")
 @Data
 public class Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "Id")
+    @Column(name = "id")
     private Long id;
 
-    @Column(name = "Title")
+    @Column(name = "title")
     private String title;
 
-    @Column(name = "Author")
+    @Column(name = "author")
     private String author;
 
-    @Column(name = "Description")
+    @Column(name = "description")
     private String description;
 
-    @Column(name = "Copies")
+    @Column(name = "copies")
     private int copies;
 
-    @Column(name = "CopiesAvailable")
+    @Column(name = "copies_available")
     private int copiesAvailable;
 
-    @Column(name = "Category")
+    @Column(name = "category")
     private String category;
 
-    @Column(name = "Img")
+    @Column(name = "img")
     private String img;
 }

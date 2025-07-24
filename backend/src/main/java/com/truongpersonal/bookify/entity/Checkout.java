@@ -5,7 +5,7 @@ import lombok.Data;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "Checkout")
+@Table(name = "checkout")
 @Data
 public class Checkout {
 
@@ -20,18 +20,18 @@ public class Checkout {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "Id")
+    @Column(name = "id")
     private Long id;
 
-    @Column(name = "UserEmail")
+    @Column(name = "user_email")
     private String userEmail;
 
-    @Column(name = "CheckoutDate")
+    @Column(name = "checkout_date")
     private String checkoutDate;
 
-    @Column(name = "ReturnDate")
+    @Column(name = "return_date")
     private String returnDate;
 
-    @Column(name = "BookId")
+    @Column(name = "book_id")
     private Long bookId;
 }

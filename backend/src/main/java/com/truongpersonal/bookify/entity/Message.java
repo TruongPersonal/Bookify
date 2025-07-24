@@ -6,7 +6,7 @@ import lombok.Data;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "Messages")
+@Table(name = "messages")
 @Data
 public class Message {
 
@@ -19,25 +19,25 @@ public class Message {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="Id")
+    @Column(name="id")
     private Long id;
 
-    @Column(name="UserEmail")
+    @Column(name="user_email")
     private String userEmail;
 
-    @Column(name="Title")
+    @Column(name="title")
     private String title;
 
-    @Column(name="Question")
+    @Column(name="question")
     private String question;
 
-    @Column(name="AdminEmail")
+    @Column(name="admin_email")
     private String adminEmail;
 
-    @Column(name="Response")
+    @Column(name="response")
     private String response;
 
-    @Column(name="Closed")
+    @Column(name="closed")
     private boolean closed;
 }
 
