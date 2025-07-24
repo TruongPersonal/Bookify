@@ -15,7 +15,7 @@ public class Review {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "userEmail")
+    @Column(name = "user_email")
     private String userEmail;
 
     @Column(name = "date")
@@ -25,19 +25,10 @@ public class Review {
     @Column(name = "rating")
     private double rating;
 
-    @Column(name = "bookId")
+    @Column(name = "book_id")
     private Long bookId;
 
-    @Column(name = "reviewDescription")
+    @Column(name = "review_description")
     private String reviewDescription;
-
-
-
-
-
-
-
-
-
 
 }
