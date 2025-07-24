@@ -12,7 +12,7 @@ public interface CheckoutRepository extends JpaRepository<Checkout, Long> {
 
     Checkout findByUserEmailAndBookId(String userEmail, Long bookId);
 
-    List<Checkout> findBooksByUserEmail(String userEmail);
+    List<Checkout> findByUserEmail(String userEmail);
 
     @Modifying
     @Query("delete from Checkout c where c.bookId in :bookId")
