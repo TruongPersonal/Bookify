@@ -5,7 +5,8 @@
 ## 🚀 Deployment
 
 - **Frontend**: Deployed on [Vercel](https://vercel.com/)
-- **Backend**: Deployed on [Railway](https://railway.app/)
+- **Backend**: Deployed on [Render](https://render.com)
+- **Database**: Deployed on [Aiven](https://aiven.io)
 - **Authentication**: Integrated with [Auth0](https://auth0.com/) for login/logout
 - **Payment**: Integrated with [Stripe](https://stripe.com/) in test mode with full features
 
@@ -24,7 +25,7 @@
 - Maven
 - Java 18
 - RESTful API
-- Hosting: Railway
+- Hosting: Render
 
 ## 🔐 Authentication – Auth0
 
