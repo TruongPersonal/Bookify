@@ -11,7 +11,7 @@
 	<groupId>com.truongpersonal</groupId>
 	<artifactId>bookify</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bookify-backend</name>
+	<name>bookify</name>
 	<description></description>
 	<properties>
 		<java.version>18</java.version>
